@@ -1,2 +1,2 @@
 # WorkshopVs
-Our Visual Studio Projects starting point.
+Our starting point for Visual Studio projects.
