@@ -1,0 +1,37 @@
+1. Test: Inizializzazione class Warrior
+
+Testare che la classe Warrior sia inizializzata correttamente.
+- level 1
+- rank pushover
+- experience 100
+
+2. Test: Training
+
+Testare il metodo training nelle condizioni:
+- Training fallisce per mancanza dei requisiti minimi
+- Una volta terminato il training il guerriero ha i valori
+  level, rank, experience attesi.
+
+3. Test: Aumento esperienza graduale con training
+
+Aumento gradualmente (fino a 10000) l'esperienza e testo che:
+- Ogni 100 incrementi il livello aumenta di 1
+- A esperienza 10000 il livello é 100 e rank Greatest
+- Ogni 10 livelli il rank diventa il successivo
+
+4. Test: Logica della Battaglia
+
+- If a warrior level 1 fights an enemy level 1, they will receive 10 experience points + esito 
+- If a warrior level 1 fights an enemy level 3, they will receive 80 experience points.
+- If a warrior level 5 fights an enemy level 4, they will receive 5 experience points.
+- If a warrior level 3 fights an enemy level 9, they will receive 720 experience points, resulting in the warrior rising up by at least 7 levels.
+- If a warrior level 8 fights an enemy level 13, they will receive 0 experience points and return "You've been defeated". (Remember, difference in rank & enemy level being 5 levels higher or more must be established for this.)
+- If a warrior level 6 fights an enemy level 2, they will receive 0 experience points.
+
+5. Test: Risultati Battaglie
+
+- Livello del nemico > livello Warrior + 5 --> defeated
+- Livello Warrior > Livello del nemico + 2 o piú --> easy fight
+- Livello Warrior = Livello del nemico o > fino a Livello del nemico + 1 --> good fight
+- Livello Warrior < Livello del nemico --> intense fight
+
