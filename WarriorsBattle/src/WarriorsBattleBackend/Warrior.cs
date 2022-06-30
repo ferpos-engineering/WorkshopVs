@@ -39,7 +39,14 @@
 
             private set
             {
-                this.level = value;
+                if (value < 100)
+                {
+                    this.level = value;
+                } else 
+                {
+                    this.level = 100;
+                }
+                this.rank = (Ranks)((value - 1) / 10);
             }
         }
 
@@ -55,7 +62,26 @@
 
             private set
             {
-                this.experience = value;
+                // se value vale 20000 cosa scrivo negli attributi della classe?
+
+                if (value < 10000){
+                    this.level = (byte)(value / 100);
+                    this.experience = value;
+                } else {
+                    this.level = 100;
+                    this.experience = 10000;
+                }
+            }
+
+        }
+
+        public Ranks Rank
+        {
+            get {
+                return this.rank;
+            }
+            private set {
+                this.rank = value;
             }
         }
         #endregion
