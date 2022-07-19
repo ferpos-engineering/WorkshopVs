@@ -1,8 +1,8 @@
 ﻿namespace WarriorsBattleBackend
 {
-    public enum Ranks
+    public enum Ranks : int
     {
-        Pushover = 20000,
+        Pushover = 0,
         Novice,
         Fighter,
         Warrior,
